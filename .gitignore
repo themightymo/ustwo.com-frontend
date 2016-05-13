@@ -10,3 +10,4 @@ etc/nginx/ssl
 share/nginx/assets
 build
 sensitive
+.idea
