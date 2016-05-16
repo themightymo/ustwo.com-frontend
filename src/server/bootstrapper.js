@@ -59,6 +59,9 @@ function navigate(urlString) {
       case 'blog/search-results':
         setSearchQueryTo(params[0]);
         break;
+      case 'events':
+        setEventsStudioTo(params[0] || 'all');
+        break;
     }
   }
 
@@ -95,6 +98,11 @@ function setBlogCategoryTo(id) {
   _state.postsPagination = Defaults.postsPagination;
   return Promise.resolve(_state);
 }
+function setEventsStudioTo(id) {
+  _state.eventsStudio = id;
+  _state.eventsPagination = Defaults.eventsPagination;
+  return Promise.resolve(_state);
+},
 function setSearchQueryTo(string) {
   _state.searchQuery = string;
   return Promise.resolve(_state);

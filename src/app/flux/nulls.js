@@ -6,5 +6,7 @@ export default {
   modal: null,
   takeover: null,
   postsPaginationTotal: null,
-  posts: null
+  posts: null,
+  eventsPaginationTotal: null,
+  events: null
 };
